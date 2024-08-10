@@ -1,0 +1,147 @@
+.container {
+  width: 100%;
+  margin: 10px auto;
+  border: 4px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.userContent {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.imgWrapper {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 30px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.userInfo {
+  text-align: center;
+}
+
+
+.userName {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.userTag,
+.userLocation {
+  font-size: 30px;
+  color: rgb(122 122 122);
+}
+
+.userStats {
+  background-color: rgb(127, 120, 120, 0.2);
+  border-top: 4px solid rgb(127 120 120);
+}
+
+.userItem {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userItem:not(:last-child) {
+  border-bottom: 4px solid rgb(127 120 120);
+}
+
+.userStatsTitle,
+.userStatsInfo {
+  font-size: 30px;
+}
+
+@media screen and (min-width: 375px) {
+  .container {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .imgWrapper {
+    width: 280px;
+  }
+
+  .userName {
+    font-size: 45px;
+  }
+
+  .userTag,
+  .userLocation {
+    font-size: 40px;
+  }
+
+  .userStatsTitle,
+  .userStatsInfo {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1440px;
+    margin: 20px auto;
+  }
+
+  .userContent {
+    padding: 30px;
+  }
+
+  .imgWrapper {
+    width: 500px;
+  }
+
+  .userImg {
+    width: 500px;
+  }
+
+  .userName {
+    font-size: 55px;
+    margin-bottom: 20px;
+  }
+
+  .userTag,
+  .userLocation {
+    font-size: 50px;
+  }
+
+  .userStats {
+    display: flex;
+    height: 180px;
+  }
+
+  .userItem {
+    flex-basis: calc(100% / 3);
+  }
+
+  .userItem:not(:last-child) {
+    border-bottom: none
+  }
+
+  .userItem:not(:last-child) {
+    border-right: 4px solid rgb(127 120 120);
+  }
+
+  .userStatsTitle,
+  .userStatsInfo {
+    font-size: 50px;
+  }
+}
