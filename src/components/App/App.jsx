@@ -1,6 +1,7 @@
+import Header from "../Header/Header";
 import Profile from "../Profile/Profile";
 import FriendList from "../FriendList/FriendList";
-/* import TransactionHistory from "../TransactionHistory/TransactionHistory"; */
+import TransactionHistory from "../TransactionHistory/TransactionHistory";
 
 import userData from "../userData.json";
 import friends from "../friends.json";
@@ -11,6 +12,7 @@ import "./App.module.css";
 export default function App() {
   return (
     <>
+      <Header />
       <Profile
         name={userData.username}
         tag={userData.tag}
@@ -19,7 +21,7 @@ export default function App() {
         stats={userData.stats}
       />
       <FriendList friends={friends} />
-{/*       <TransactionHistory items={transactions} /> */}
+      <TransactionHistory items={transactions} />
     </>
   );
 }

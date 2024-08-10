@@ -1,0 +1,18 @@
+.tableHead {
+  font-size: 16px;
+  padding: 5px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 375px) {
+  .tableHead {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .tableHead {
+    padding: 15px;
+  }
+}
