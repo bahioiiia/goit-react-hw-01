@@ -1,0 +1,40 @@
+.friendImg {
+  margin-bottom: 10px;
+}
+
+.friendName {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.friendStatus {
+  font-size: 20px;
+}
+
+.isOnline {
+  color: rgb(35, 166, 5);
+}
+
+.isOffline {
+  color: rgb(255, 0, 0);
+}
+
+@media screen and (min-width: 768px) {
+  .friendName {
+    font-size: 35px;
+  }
+
+  .friendStatus {
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .friendName {
+    font-size: 45px;
+  }
+
+  .friendStatus {
+    font-size: 35px;
+  }
+}

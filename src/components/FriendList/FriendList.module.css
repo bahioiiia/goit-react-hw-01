@@ -1,0 +1,54 @@
+.friendsWraper {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  /* display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center; */
+}
+
+.friendsItem {
+  width: 100%;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 375px) {
+  .friendsWraper {
+    max-width: 375px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .friendsWraper {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .friendsItem {
+    flex-basis: calc((100% - 10px) / 2);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .friendsWraper {
+    max-width: 1440px;
+  }
+
+  .friendsItem {
+    flex-basis: calc((100% - 40px) / 5);
+  }
+
+}
