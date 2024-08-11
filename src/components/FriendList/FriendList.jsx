@@ -17,8 +17,9 @@ FriendList.propTypes = {
 
 export default function FriendList({ friends }) {
   return (
-    <ul className={clsx(css.friendsWraper)}>
-      {friends.map((friend) => {
+    <section>
+      <ul className={clsx(css.friendsWraper)}>
+        {friends.map((friend) => {
         return (
           <li key={friend.id} className={clsx(css.friendsItem)}>
             <FriendListItem
@@ -29,6 +30,7 @@ export default function FriendList({ friends }) {
           </li>
         );
       })}
-    </ul>
+      </ul>
+    </section>
   );
 }

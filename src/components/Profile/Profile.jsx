@@ -10,7 +10,8 @@ export default function Profile({
   stats: { followers, views, likes },
 }) {
   return (
-    <div className={clsx(css.container)}>
+    <section>
+      <div className={clsx(css.container)}>
       <div className={clsx(css.userContent)}>
         <div className={clsx(css.imgWrapper)}>
           <img
@@ -48,8 +49,9 @@ export default function Profile({
             <b>{likes}</b>
           </span>
         </li>
-      </ul>
-    </div>
+        </ul>
+        </div>
+    </section>
   );
 }
 

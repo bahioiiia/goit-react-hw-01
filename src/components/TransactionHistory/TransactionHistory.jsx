@@ -1,7 +1,6 @@
 import PropTypes from "prop-types";
 import clsx from "clsx";
 import TransactionItem from "../TransactionItem/TransactionItem";
-/* import TransactionsHead from "../TransactionsHead/TransactionsHead"; */
 import css from "./TransactionHistory.module.css";
 
 TransactionHistory.propTypes = {
@@ -17,6 +16,7 @@ TransactionHistory.propTypes = {
 
 export default function TransactionHistory({ items }) {
   return (
+    <section>
     <table className={clsx(css.transactionsTable)}>
       <thead className={clsx(css.tableHead)}>
         <tr>
@@ -39,6 +39,7 @@ export default function TransactionHistory({ items }) {
           );
         })}
       </tbody>
-    </table>
+      </table>
+      </section>
   );
 }
